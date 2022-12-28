@@ -34,7 +34,6 @@ export const BookingItem = ({ values }) => {
         dispatch(updateItem({ day: data.day, index, name, value }));
 
         const result = validateTimeFormat(event, value);
-        console.log(result);
         setErrors({ ...errors, ...result });
     };
 

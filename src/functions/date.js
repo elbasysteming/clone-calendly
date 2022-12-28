@@ -93,16 +93,18 @@ export const validateTimeFormat = (event, value) => {
             : /^(0?[1-9]|1[0-2]):[0-5][0-9]$/;
 
     let isValid = pattern.test(value);
+    let message = "";
 
     if (!isValid) {
         event.target.style.border = "1px solid #dc3545";
         event.target.style.outline = "none";
+        message = "HH:MM(24h)";
     } else {
         event.target.style.border = "1px solid #dedede";
     }
 
     return {
-        time: { message: "HH:MM(24h)" },
+        time: { message },
     };
 };
 
