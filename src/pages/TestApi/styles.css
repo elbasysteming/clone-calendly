@@ -1,0 +1,11 @@
+.container {
+    margin: 0px auto;
+    min-height: 500px;
+    width: 1200px;
+    padding: 50px;;
+    border: 1px solid #dedede;
+}
+
+.article {
+    border: 1px solid #dedede;
+}
